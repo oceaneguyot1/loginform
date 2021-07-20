@@ -1,0 +1,34 @@
+body{
+    font-family: sans-serif;
+}
+
+#calculatrice{
+    width: 50%;
+    margin: auto;
+    background-color: rgba(210, 105, 30, 0.466);
+    padding: 35px;
+}
+
+#ecran{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.button__indiv{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    margin: 10px;
+    color: white;
+    font-weight: bolder;
+}
