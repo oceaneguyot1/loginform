@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculatrice</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="calculatrice">
-        <div id="ecran"></div>
-        <div id="button--chiffre" class="button">
-            <div class="button__indiv nombre">1</div>
-            <div class="button__indiv nombre">2</div>
-            <div class="button__indiv nombre">3</div>
-            <div class="button__indiv nombre">4</div>
-            <div class="button__indiv nombre">5</div>
-            <div class="button__indiv nombre">6</div>
-            <div class="button__indiv nombre">7</div>
-            <div class="button__indiv nombre">8</div>
-            <div class="button__indiv nombre">9</div>
-            <div class="button__indiv nombre">0</div>
+    <div class="card-container">
+        <div class="card-wrapper"></div>
+      
+        <div class="form-container">
+          <form action="">
+            <label for="number">Card Number</label>
+            <input placeholder="XXXX  XXXX  XXXX  XXXX" type="text" name="number">
+            <label for="name">Name on Card</label>
+            <input placeholder="Full Name" type="text" name="name"><br>
+      
+            <div class="cardForm-Field50">
+              <label for="expiry">Expiry Date</label><br>
+              <input placeholder="MM/YY" type="text" name="expiry" class="secondRow">
+            </div>
+            <div class="cardForm-Field50">
+              <label for="cvc">Security Code</label><br>
+              <input placeholder="XXX" type="text" name="cvc" class="secondRow">
+            </div>
+      
+            <!-- Button Default -->
+            <input type="submit" value="Enter your Card info..." class="button CardDefault">
+
+          </form>
         </div>
+      </div>
+
     
-        <div id="button--calcul" class="button">
-            <div class="button__indiv operator">+</div>
-            <div class="button__indiv operator">-</div>
-            <div class="button__indiv operator">/</div>
-            <div class="button__indiv operator">*</div>
-        </div>
 
-        <div class="button">
-            <div id="calc" class="button__indiv">=</div>
-        </div>
-    </div>
-
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
