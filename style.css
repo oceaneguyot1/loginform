@@ -1,107 +1,47 @@
-.cardForm-Field50 {
-    float: left;
+.title{
+    display: flex;
     width: 50%;
-  }
-  
-  
-  
-  /* Makes the default card text easier to read */
-  .jp-card .jp-card-front .jp-card-display, .jp-card .jp-card-back .jp-card-display {
-    text-shadow: 0 1px 2px #1D1F20;
-  }
-  /* Changes the default styles */
-  .jp-card .jp-card-front, .jp-card .jp-card-back {
-    background: #27ae60!important;
-  }
-  .card-container form {
-   max-width: 350px;
-   text-align: center;
-  }
-  .form-container form {
-    margin: 10px auto;
-  }
-  .form-container input {
-    margin: 0 0 10px 0;
-    /* padding: 0; */
-    font-size: 16px;
-    float: left;
-    padding: 5px 0;
-    box-sizing: border-box;
-    webkit-box-shadow: none;
-    box-shadow: none;
-    /* width: 50%; */
-    display: block;
-  }
-  input.secondRow {
-    float: left;
-    display: block;
-    width: 100%;
-  }
-  
-  .form-container label {
-    text-align: left;
-    float: left;
-    padding: 5px 0 0px 5px;
-    width: 100%;
-    font-family: arial;
-    text-transform: uppercase;
-    font-size: 14px;
-    /* font-weight: bold; */
-  }
-  
-  input.button {
-    width: 100%;
-    padding: 11px;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    /* background: #CCCCCC; */
-  }
-  /*input.button:hover {
-    background: #27ae60;
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  }*/
-   input:not([type=submit]):not([type=file]) {
-     /* omg so much cleaner */
-    border: 1px solid #DDD;
-      -webkit-box-shadow: 
-        inset 0 0 0px  rgba(0,0,0,0.1),
-              0 0 0px rgba(0,0,0,0.1); 
-      -moz-box-shadow: 
-        inset 0 0 0px  rgba(0,0,0,0.1),
-              0 0 0px rgba(0,0,0,0.1); 
-      box-shadow: 
-        inset 0 0 0px  rgba(0,0,0,0.1),
-              0 0 0px rgba(0,0,0,0.1); 
-      padding: 10px;
-  }
-  .form-container input[name="name"]{
-    width: 100%;
-  }
-  .form-container input[name="number"]{
-    width: 100%;
-  }
-  .form-container input[name="cvc"]{
-    border-left: 0px;
-  }
-  
-  .CardDefault, .CardDefault:hover {
-    background: gray;
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  }
-  .CardWarning,.CardWarning:hover {
-    background: red;
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  }
-  .CardGood, .CardGood:hover {
-    background: #27ae60;
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  }
-  
-  .form-container input.incorrectInfo {
-    border: red solid 1px;
-  }
+    margin: auto;
+    justify-content: space-around;
+}
+
+h1:hover{
+    cursor: pointer;
+}
+
+h1:hover:not(.select){
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(27, 215, 221);
+}
+
+
+h1:active:not(.select){
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(135, 21, 201);
+}
+
+.bloc{
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+}
+
+
+
+.select{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(135, 21, 201);
+}
+
+
+
+.labelInputBloc{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}

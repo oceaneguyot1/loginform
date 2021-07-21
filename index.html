@@ -9,32 +9,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="card-container">
-        <div class="card-wrapper"></div>
-      
-        <div class="form-container">
-          <form action="">
-            <label for="number">Card Number</label>
-            <input placeholder="XXXX  XXXX  XXXX  XXXX" type="text" name="number">
-            <label for="name">Name on Card</label>
-            <input placeholder="Full Name" type="text" name="name"><br>
-      
-            <div class="cardForm-Field50">
-              <label for="expiry">Expiry Date</label><br>
-              <input placeholder="MM/YY" type="text" name="expiry" class="secondRow">
+    <div class="title">
+        <h1 id="title__login" class="select">Se connecter</h1>
+        <h1 id="title__signup">S'inscrire</h1>
+    </div>
+    
+    <div id="loginForm" class="bloc">
+        
+        <form>
+            <div class="labelInputBloc">
+                <label for="login">Login</label>
+                <input type="text" id="login" name="login">
             </div>
-            <div class="cardForm-Field50">
-              <label for="cvc">Security Code</label><br>
-              <input placeholder="XXX" type="text" name="cvc" class="secondRow">
-            </div>
-      
-            <!-- Button Default -->
-            <input type="submit" value="Enter your Card info..." class="button CardDefault">
+            
 
-          </form>
-        </div>
-      </div>
+            <div class="labelInputBloc">
+                <label for="pwd">Mot de passe</label>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+
+            <div class="labelInputBloc">
+                <input type="submit" id="login__button" value="Me connecter" class="btn btn-secondary">
+            </div>
+
+        </form>
+        
+    </div>
+
+    <div id="signupForm" class="bloc">
+        <form>
+            <div class="labelInputBloc">
+                <label for="loginSU">Login</label>
+                <input type="text" id="loginSU" name="loginSU">
+            </div>
+
+            <div class="labelInputBloc">
+                <label for="nomSU">Nom</label>
+                <input type="text" id="nomSU" name="nomSU">
+            </div>
+
+            <div class="labelInputBloc">
+                <label for="prenomSU">Prénom</label>
+                <input type="text" id="prenomSU" name="prenomSU">
+            </div>
+            
+
+            <div class="labelInputBloc">
+                <label for="pwdSU">Mot de passe</label>
+                <input type="password" id="pwdSU" name="pwdSU">
+            </div>
+            
+            <div class="labelInputBloc">
+                <label for="pwdverifSU">Vérifier votre mot de passe</label>
+                <input type="password" id="pwdverifSU" name="pwdverifSU">
+            </div>
+
+            <div class="labelInputBloc">
+                <label for="mailSU">Mail</label>
+                <input type="email" id="mailSU" name="mailSU">
+            </div>
+            
+
+            <div class="labelInputBloc">
+                <input type="submit" id="signup__button" value="M'inscrire" class="btn btn-secondary">
+            </div>
+
+        </form>
+        
+    </div>
 
     
 
