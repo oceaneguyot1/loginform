@@ -21,3 +21,20 @@ email.addEventListener('focusout',function(e){
     }
 
 })
+
+
+document.getElementById('title__signup').addEventListener('click', function(e){
+    this.classList.add('select');
+    document.getElementById('title__login').classList.remove('select');
+    signupForm.classList.remove('none');
+    loginForm.classList.add('none');
+
+})
+
+
+document.getElementById('title__login').addEventListener('click', function(e){
+    this.classList.add('select');
+    document.getElementById('title__signup').classList.remove('select');
+    loginForm.classList.remove('none');
+    signupForm.classList.add('none');
+})
