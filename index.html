@@ -36,7 +36,7 @@
         
     </div>
 
-    <div id="signupForm" class="bloc">
+    <div id="signupForm" class="bloc none">
         <form>
             <div class="labelInputBloc">
                 <label for="loginSU">Login</label>
@@ -66,7 +66,8 @@
 
             <div class="labelInputBloc">
                 <label for="mailSU">Mail</label>
-                <input type="email" id="mailSU" name="mailSU">
+                <input type="text" id="mailSU" name="mailSU" placeholder="nomprenom@mail.com">
+                <div class="none error"  id="alertEmail">Adresse email non valide</div>
             </div>
             
 

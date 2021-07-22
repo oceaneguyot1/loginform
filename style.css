@@ -2,6 +2,19 @@ body{
     user-select: none;  
 }
 
+.none{
+    display : none;
+}
+
+.error{
+    color: red;
+    font-style: italic;
+}
+
+.errorShadow{
+    box-shadow: 0px 0px 9px 1px rgba(255,0,0,1);
+}
+
 .title{
     display: flex;
     width: 50%;
