@@ -70,6 +70,10 @@ signup__button.addEventListener('click',function(e){
  * @param {*} idMessage : element html où on veut insérer le message
  */
 function viewPopUp(choixMessage, idMessage){
+
+    //Réinitialisation de la div avec une chaine de caractère vide
+    document.getElementById(idMessage).innerText = "";
+
     let span = document.createElement('span');
 
     let message;
@@ -94,5 +98,16 @@ function viewPopUp(choixMessage, idMessage){
     document.getElementById(idMessage).appendChild(spanContent);
     
     popUp.classList.remove('none');
+
+    popUp.addEventListener('click', function(e){
+        if(e.target.id==="popUp"){
+            this.classList.add('none')  
+        }
+        
+    })
+
+    setTimeout(function(){
+        popUp.classList.add('none');
+    }, 3000)
 }
 
