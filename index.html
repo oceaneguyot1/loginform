@@ -58,7 +58,15 @@
     
                 <div class="labelInputBloc">
                     <label for="pwdSU">Mot de passe</label>
-                    <input type="password" id="pwdSU" name="pwdSU">
+                    <input type="text" id="pwdSU" name="pwdSU">
+                    <div>
+                        <ul>
+                            <li id="nbCar" class="error">Au moins 8 charactères</li>
+                            <li id="maj" class="error">Au moins 1 majuscule</li>
+                            <li id="chiffre" class="error">Au moins 1 chiffre</li>
+                            <li id="carSpe" class="error">Au moins 1 caractere special parmis @.!*;()\-_#%$€?'</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="labelInputBloc">

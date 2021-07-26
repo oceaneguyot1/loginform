@@ -111,3 +111,63 @@ function viewPopUp(choixMessage, idMessage){
     }, 3000)
 }
 
+pwdSU.addEventListener('input',function(e){
+    let isSpecial = false;
+    let regexSpecial = /[@.!*;()\-_#%$€?']/gm;
+
+    let isMaj = false;
+    let regexMaj = /[A-Z]/gm;
+
+    let isChiffre = false;
+    let regexChiffre = /\d/gm
+
+    let isLong = false;
+
+    let value = this.value;
+
+    for(let i=0; i<value.length; i++){
+        if(regexSpecial.exec(value[i])){
+            isSpecial = true;
+        } else if(regexMaj.exec(value[i])){
+            isMaj = true;
+        } else if(regexChiffre.exec(value[i])){
+            isChiffre = true;
+        }
+    }
+
+    if(value.length>8) isLong = true;
+
+    verifMdp(isLong, nbCar);
+    verifMdp(isSpecial, carSpe);
+    verifMdp(isMaj, maj);
+    verifMdp(isChiffre, chiffre);
+
+
+    if(isSpecial && isMaj && isChiffre && isLong){
+        console.log('Mot de passe sécurisé');
+    } else {
+        console.log('Mot de passe pas assez sécurisé');
+    }
+
+
+
+})
+
+function verifMdp(maCondition, divVerifMessage){
+    if(maCondition) {
+        divVerifMessage.classList.remove('error')
+    } else {
+        divVerifMessage.classList.add('error')
+    }
+}
+
+login.addEventListener('focusout', function(e){
+    localStorage.setItem('login', this.value)
+})
+
+if(localStorage.getItem('login')){
+    login.value = localStorage.getItem('login');
+}
+
+
+
