@@ -38,3 +38,61 @@ document.getElementById('title__login').addEventListener('click', function(e){
     loginForm.classList.remove('none');
     signupForm.classList.add('none');
 })
+
+
+pwdverifSU.addEventListener('focusout', function(e){
+    let pwd = pwdSU.value;
+    let pwdverif = this.value;
+
+    if(pwd !== pwdverif){
+        pwdSU.classList.add('errorShadow');
+
+        this.classList.add('errorShadow');
+
+        alertPwd.classList.remove('none')
+    }
+
+})
+
+
+login__button.addEventListener('click',function(e){
+    e.preventDefault();
+    viewPopUp('login', 'typeMessage')
+})
+signup__button.addEventListener('click',function(e){
+    e.preventDefault();
+    viewPopUp('signup', 'typeMessage')
+})
+
+/**
+ * Fonction pour choisir un message à afficher dans un popup
+ * @param {*} choixMessage : Message texte que l'on veut afficher
+ * @param {*} idMessage : element html où on veut insérer le message
+ */
+function viewPopUp(choixMessage, idMessage){
+    let span = document.createElement('span');
+
+    let message;
+
+    switch (choixMessage){
+        case 'login': 
+            message = "Connexion";
+            break;
+        case 'signup':
+            message = "Inscription";
+            break;
+
+    }
+
+    let spanContent = document.createTextNode(message);
+
+    span.appendChild(spanContent);
+
+    //A BANIR !
+    // typeMessage.innerHTML = '<div>Connexion</div>';
+
+    document.getElementById(idMessage).appendChild(spanContent);
+    
+    popUp.classList.remove('none');
+}
+

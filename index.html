@@ -9,74 +9,92 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="title">
-        <h1 id="title__login" class="select">Se connecter</h1>
-        <h1 id="title__signup">S'inscrire</h1>
-    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1 id="title__login" class="select">Se connecter</h1>
+            <h1 id="title__signup">S'inscrire</h1>
+        </div>
+        
+        <div id="loginForm" class="bloc">
+            
+            <form>
+                <div class="labelInputBloc">
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login">
+                </div>
+                
     
-    <div id="loginForm" class="bloc">
-        
-        <form>
-            <div class="labelInputBloc">
-                <label for="login">Login</label>
-                <input type="text" id="login" name="login">
-            </div>
+                <div class="labelInputBloc">
+                    <label for="pwd">Mot de passe</label>
+                    <input type="password" id="pwd" name="pwd">
+                </div>
+    
+                <div class="labelInputBloc">
+                    <input type="submit" id="login__button" value="Me connecter" class="btn btn-secondary">
+                </div>
+    
+            </form>
             
-
-            <div class="labelInputBloc">
-                <label for="pwd">Mot de passe</label>
-                <input type="password" id="pwd" name="pwd">
-            </div>
-
-            <div class="labelInputBloc">
-                <input type="submit" id="login__button" value="Me connecter" class="btn btn-secondary">
-            </div>
-
-        </form>
-        
+        </div>
+    
+        <div id="signupForm" class="bloc none">
+            <form>
+                <div class="labelInputBloc">
+                    <label for="loginSU">Login</label>
+                    <input type="text" id="loginSU" name="loginSU">
+                </div>
+    
+                <div class="labelInputBloc">
+                    <label for="nomSU">Nom</label>
+                    <input type="text" id="nomSU" name="nomSU">
+                </div>
+    
+                <div class="labelInputBloc">
+                    <label for="prenomSU">Prénom</label>
+                    <input type="text" id="prenomSU" name="prenomSU">
+                </div>
+                
+    
+                <div class="labelInputBloc">
+                    <label for="pwdSU">Mot de passe</label>
+                    <input type="password" id="pwdSU" name="pwdSU">
+                </div>
+                
+                <div class="labelInputBloc">
+                    <label for="pwdverifSU">Vérifier votre mot de passe</label>
+                    <input type="password" id="pwdverifSU" name="pwdverifSU">
+                    <div class="none error"  id="alertPwd">Les mots de passes ne correspondent pas</div>
+                </div>
+    
+                <div class="labelInputBloc">
+                    <label for="mailSU">Mail</label>
+                    <input type="text" id="mailSU" name="mailSU" placeholder="nomprenom@mail.com">
+                    <div class="none error"  id="alertEmail">Adresse email non valide</div>
+                </div>
+                
+    
+                <div class="labelInputBloc">
+                    <input type="submit" id="signup__button" value="M'inscrire" class="btn btn-secondary">
+                </div>
+    
+            </form>
+            
+        </div>
     </div>
 
-    <div id="signupForm" class="bloc none">
-        <form>
-            <div class="labelInputBloc">
-                <label for="loginSU">Login</label>
-                <input type="text" id="loginSU" name="loginSU">
-            </div>
 
-            <div class="labelInputBloc">
-                <label for="nomSU">Nom</label>
-                <input type="text" id="nomSU" name="nomSU">
-            </div>
 
-            <div class="labelInputBloc">
-                <label for="prenomSU">Prénom</label>
-                <input type="text" id="prenomSU" name="prenomSU">
+
+    <div id="popUp" class="popUp none">
+        <div id="popUpBoite" class="popUpBoite">
+            <div class="closePopUp">X</div>
+            <div>
+                <span id="typeMessage"></span> réussi
             </div>
             
+        </div>
 
-            <div class="labelInputBloc">
-                <label for="pwdSU">Mot de passe</label>
-                <input type="password" id="pwdSU" name="pwdSU">
-            </div>
-            
-            <div class="labelInputBloc">
-                <label for="pwdverifSU">Vérifier votre mot de passe</label>
-                <input type="password" id="pwdverifSU" name="pwdverifSU">
-            </div>
-
-            <div class="labelInputBloc">
-                <label for="mailSU">Mail</label>
-                <input type="text" id="mailSU" name="mailSU" placeholder="nomprenom@mail.com">
-                <div class="none error"  id="alertEmail">Adresse email non valide</div>
-            </div>
-            
-
-            <div class="labelInputBloc">
-                <input type="submit" id="signup__button" value="M'inscrire" class="btn btn-secondary">
-            </div>
-
-        </form>
-        
     </div>
 
     
