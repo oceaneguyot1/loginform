@@ -1,11 +1,6 @@
 body{
-    background-color:brown;
-    user-select: none;  
+    background-color:brown;  
 }
-.container {
-    border: 1px solid black;
-}
-
 
 .none{
     display : none !important;
